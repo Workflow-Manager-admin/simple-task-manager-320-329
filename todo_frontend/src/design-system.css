@@ -1,0 +1,213 @@
+:root {
+  /* Colors */
+  --color-system-bg-dark-base-primary: #000000; /* fallback, color definition missing */
+  --color-label-light-primary: #000000; /* fallback, color definition missing */
+  --color-label-dark-primary: #000000; /* fallback, color definition missing */
+  --color-label-dark-tertiary: #000000; /* fallback, color definition missing */
+  --color-color-light-green: #000000; /* fallback, color definition missing */
+  --color-color-dark-yellow: #000000; /* fallback, color definition missing */
+  --color-systemgreen-light: #000000; /* fallback, color definition missing */
+
+  --color-ffffff: #ffffff;
+  --color-d6d7ef: #d6d7ef;
+  --color-9395d3: #9395d3;
+  --color-8b8787: #8b8787;
+  --color-000000: #000000;
+  --color-d1d1d6: #d1d1d6;
+  --color-ebebf5: #ebebf5;
+  --color-34c759: #34c759;
+  --color-ffd60a: #ffd60a;
+  --color-b3b7ee: #b3b7ee;
+
+  /* Spacing (Selected common) */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 32px;
+  --space-xl: 64px;
+
+  /* Border Radius */
+  --radius-xs: 1px;
+  --radius-md: 15px;
+  --radius-lg: 20px;
+
+  /* Shadow */
+  --shadow-0: 0px 4px 4px 0px #00000033;
+
+  /* Typography (example styles, uses .heading-1, .label, etc.) */
+  --font-jost: 'Jost', sans-serif;
+
+  /* Sizes, weights, lines, colors for typography tokens */
+  /* Heading Large (typo_8, used for AppBar) */
+  --heading-large-size: 24px;
+  --heading-large-weight: 600;
+  --heading-large-lineheight: 34.68px;
+  --heading-large-color: var(--color-ffffff);
+
+  /* Todo title (typo_9) */
+  --todo-title-size: 13px;
+  --todo-title-weight: 600;
+  --todo-title-lineheight: 18.79px;
+  --todo-title-color: var(--color-9395d3);
+
+  /* Todo subtitle (typo_10) */
+  --todo-subtitle-size: 10px;
+  --todo-subtitle-weight: 400;
+  --todo-subtitle-lineheight: 14.45px;
+  --todo-subtitle-color: var(--color-000000);
+
+  /* Label (typo_6, typo_7) */
+  --label-size: 10px;
+  --label-weight: 400;
+  --label-lineheight: 14.45px;
+  --label-color-light: var(--color-9395d3);
+  --label-color-dark: var(--color-8b8787);
+
+  /* Input title text (typo_11) */
+  --input-title-size: 16px;
+  --input-title-lineheight: 23.12px;
+  --input-title-color: var(--color-8b8787);
+
+  /* Button text (typo_12, typo_13) */
+  --button-add-size: 20px;
+  --button-add-weight: 600;
+  --button-add-lineheight: 28.9px;
+  --button-add-color: var(--color-ffffff);
+  --button-other-size: 15px;
+  --button-other-lineheight: 21.68px;
+  --button-other-color: var(--color-ffffff);
+}
+
+/* Typography Utility Classes */
+.heading-large {
+  font-family: var(--font-jost);
+  font-size: var(--heading-large-size);
+  font-weight: var(--heading-large-weight);
+  line-height: var(--heading-large-lineheight);
+  color: var(--heading-large-color);
+}
+
+.todo-title {
+  font-family: var(--font-jost);
+  font-size: var(--todo-title-size);
+  font-weight: var(--todo-title-weight);
+  line-height: var(--todo-title-lineheight);
+  color: var(--todo-title-color);
+}
+
+.todo-subtitle {
+  font-family: var(--font-jost);
+  font-size: var(--todo-subtitle-size);
+  font-weight: var(--todo-subtitle-weight);
+  line-height: var(--todo-subtitle-lineheight);
+  color: var(--todo-subtitle-color);
+}
+
+.label-light {
+  font-family: var(--font-jost);
+  font-size: var(--label-size);
+  font-weight: var(--label-weight);
+  line-height: var(--label-lineheight);
+  color: var(--label-color-light);
+}
+
+.label-dark {
+  font-family: var(--font-jost);
+  font-size: var(--label-size);
+  font-weight: var(--label-weight);
+  line-height: var(--label-lineheight);
+  color: var(--label-color-dark);
+}
+
+.input-title {
+  font-family: var(--font-jost);
+  font-size: var(--input-title-size);
+  line-height: var(--input-title-lineheight);
+  color: var(--input-title-color);
+}
+
+.button-add {
+  font-family: var(--font-jost);
+  font-size: var(--button-add-size);
+  font-weight: var(--button-add-weight);
+  line-height: var(--button-add-lineheight);
+  color: var(--button-add-color);
+}
+
+.button-other {
+  font-family: var(--font-jost);
+  font-size: var(--button-other-size);
+  line-height: var(--button-other-lineheight);
+  color: var(--button-other-color);
+}
+
+/* Utility classes */
+.bg-primary { background-color: var(--color-ffffff); }
+.bg-secondary { background-color: var(--color-d6d7ef); }
+.bg-highlight { background-color: var(--color-9395d3);}
+.bg-dark { background-color: var(--color-8b8787);}
+.rounded { border-radius: var(--radius-md);}
+.shadow { box-shadow: var(--shadow-0); }
+.hidden { display: none; }
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.center { justify-content: center; align-items: center; }
+
+.button {
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--space-s) var(--space-m);
+  background-color: var(--color-9395d3);
+  color: var(--color-ffffff);
+  font-size: var(--button-add-size);
+  font-weight: var(--button-add-weight);
+  box-shadow: var(--shadow-0);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.button:active {
+  background: var(--color-d6d7ef);
+  color: var(--color-9395d3);
+}
+
+.input-underline {
+  border: none;
+  border-bottom: 1px solid var(--color-8b8787);
+  background: transparent;
+  font: inherit;
+  padding: var(--space-xs) 0;
+  width: 100%;
+}
+
+.todo-bar {
+  background-color: var(--color-ffffff);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-0);
+  padding: var(--space-m);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appbar {
+  background-color: var(--color-9395d3);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  box-shadow: var(--shadow-0);
+  padding: var(--space-m);
+  min-height: 118px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.status-bar {
+  background: var(--color-ffffff);
+  border-radius: var(--radius-xs);
+  height: 44px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
